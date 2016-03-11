@@ -1,24 +1,47 @@
 {
-  "actors": [
+  "users": [
     {
       "id": 1,
-      "name": "Bryan Cranston",
-      "starred": true
+      "user_name": "test1",
+      "password": "test"
     },
     {
       "id": 2,
-      "name": "Aaron Paul",
-      "starred": true
+      "user_name": "test2",
+      "starred": "test"
     },
     {
       "id": 3,
-      "name": "Bob Odenkirk",
-      "starred": true
-    },
+      "user_name": "test3",
+      "starred": "test"
+    }
+  ],
+  "groups":[
     {
-      "id": 4,
-      "name": "Dean Norris",
-      "starred": false
+      "id":1
+      "group_name":"CPSC473",
+      "members":[1,2,3],
+      "chat":[
+        {
+          "user":1,
+          "text":"I think this is a great idea."
+        },
+        {
+          "user":2,
+          "text":"I think this is a terrible idea."
+        },
+        {
+          "user":3,
+          "text":"I think you're both wrong."
+        }
+      ]
+    }
+  ]
+  "tweets":[
+    {
+      "id":1,
+      "text":"This is our first sample tweet.",
+      "votes":0
     }
   ]
 }

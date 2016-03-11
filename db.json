@@ -16,12 +16,12 @@
       "starred": "test"
     }
   ],
-  "groups":[
+  "groups": [
     {
       "id":1
       "group_name":"CPSC473",
       "members":[1,2,3],
-      "chat":[
+      "chat": [
         {
           "user":1,
           "text":"I think this is a great idea."
@@ -37,10 +37,15 @@
       ]
     }
   ]
-  "tweets":[
+  "tweets": [
     {
       "id":1,
       "text":"This is our first sample tweet.",
+      "votes":0
+    },
+    {
+      "id":2,
+      "text":"Here's another.",
       "votes":0
     }
   ]

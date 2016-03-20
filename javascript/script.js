@@ -1,4 +1,4 @@
-var user = undefined;
+var active_user = undefined;
 
 $(document).ready(function(){
     if(user){
@@ -21,6 +21,24 @@ var displayPosts = function(){
                     displayName(index,value.content,value.user,value.date,value.votes);
                 }
             });
+        }
+    });
+};
+
+var verifyUser = function(inName, inPassword){
+    $.ajax({
+        url: "http://localhost:3000/users/?username="+inName,
+        dataType: "json",
+        type: "GET",
+        cache: false,
+        success: function(user){
+            if(user.password === inPassword) {
+                active_user = user.user_name;
+                displayPosts();
+            };
+            else{
+                //Error Message
+            }
         }
     });
 };
@@ -59,9 +77,12 @@ function displayName(id, tweet, user, date, votes){
     $("#posts").append(post);
 }
 
+function getDemoUser(){
+    return "test1";
+};
+
 function getUser(){
-    var user = "demo";
-    return user;
+    return active_user;
 }
 function getDate(){
     var d = new Date();

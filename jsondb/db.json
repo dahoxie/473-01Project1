@@ -42,11 +42,17 @@
       "id":1,
       "text":"This is our first sample tweet.",
       "votes":0
+      "author":"test1",
+      "approved":false,
+      "date": "Septmeber 14, 2014",
     },
     {
       "id":2,
       "text":"Here's another.",
-      "votes":0
+      "votes":0,
+      "author":"test1",
+      "approved":false,
+      "date": "Septmeber 16, 2014",
     }
   ]
 }

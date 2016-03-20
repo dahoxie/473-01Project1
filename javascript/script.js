@@ -1,4 +1,15 @@
+var user = undefined;
+
 $(document).ready(function(){
+    if(user){
+        displayPosts();
+    }
+    else{
+        //Display Login or create account page.
+    }
+});
+
+var displayPosts = function(){
     $.ajax({
         url: "http://localhost:3000/posts",
         dataType: "json",
@@ -12,7 +23,8 @@ $(document).ready(function(){
             });
         }
     });
-});
+};
+
 $(".tweetPost").on("click", function(){
     var tweet = $("#userTweet").val().toString();
     var data = {
@@ -63,4 +75,3 @@ function GetMonthName(monthNumber) {
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     return months[monthNumber - 1];
 }
-

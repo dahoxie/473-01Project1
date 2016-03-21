@@ -42,16 +42,20 @@
   "tweets": [
     {
       "id":1,
+      "group":1,
       "text":"This is our first sample tweet.",
-      "votes":0,
+      "voters":[1],
+      "votes":1,
       "author":"test1",
       "approved":false,
       "date": "Septmeber 14, 2014",
     },
     {
       "id":2,
+      "group":1,
       "text":"Here's another.",
-      "votes":0,
+      "voters":[2],
+      "votes":-1,
       "author":"test1",
       "approved":false,
       "date": "Septmeber 16, 2014",

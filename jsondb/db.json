@@ -23,6 +23,7 @@
     {
       "id":1,
       "group_name":"CPSC473",
+      "members":[1,2,3],
       "chat": [
         {
           "user":1,
@@ -44,8 +45,8 @@
       "id":1,
       "group":1,
       "text":"This is our first sample tweet.",
-      "voters":[1],
-      "votes":1,
+      "upUsers":[1],
+      "downUsers":[2],
       "author":"test1",
       "approved":false,
       "date": "Septmeber 14, 2014",
@@ -54,8 +55,8 @@
       "id":2,
       "group":1,
       "text":"Here's another.",
-      "voters":[2],
-      "votes":-1,
+      "upUsers":[2],
+      "downUsers":[3],
       "author":"test1",
       "approved":false,
       "date": "Septmeber 16, 2014",

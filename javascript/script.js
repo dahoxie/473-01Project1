@@ -1,3 +1,4 @@
+// Global User Variable
 var active_user = undefined;
 
 $(document).ready(function(){

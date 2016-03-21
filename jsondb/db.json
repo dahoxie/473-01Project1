@@ -3,24 +3,26 @@
     {
       "id": 1,
       "user_name": "test1",
-      "password": "test"
+      "password": "test",
+      "member_of":[1]
     },
     {
       "id": 2,
       "user_name": "test2",
-      "password": "test"
+      "password": "test",
+      "member_of":[1]
     },
     {
       "id": 3,
       "user_name": "test3",
-      "password": "test"
+      "password": "test",
+      "member_of":[1]
     }
   ],
   "groups": [
     {
       "id":1,
       "group_name":"CPSC473",
-      "members":[1,2,3],
       "chat": [
         {
           "user":1,

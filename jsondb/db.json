@@ -40,26 +40,26 @@
       ]
     }
   ],
-  "tweets": [
+  "posts": [
     {
       "id":1,
       "group":1,
-      "text":"This is our first sample tweet.",
-      "upUsers":[1],
-      "downUsers":[2],
-      "author":"test1",
+      "content":"This is our first sample tweet.",
+      "like":[1],
+      "dislike":[2],
+      "user":1,
       "approved":false,
-      "date": "Septmeber 14, 2014",
+      "date": "09/14/2015",
     },
     {
       "id":2,
       "group":1,
-      "text":"Here's another.",
-      "upUsers":[2],
-      "downUsers":[3],
-      "author":"test1",
+      "content":"This is another.",
+      "like":[2],
+      "dislike":[1],
+      "user":2,
       "approved":false,
-      "date": "Septmeber 16, 2014",
+      "date": "09/14/2015",
     }
   ]
 }

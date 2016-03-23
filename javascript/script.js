@@ -67,6 +67,27 @@ $(".tweetPost").on("click", function(){
 
 });
 
+$(".submitGroup").on("click", function(){
+    var groupName = $("#groupName").val().toString();
+    var data = {
+        groudp_Name: groupName,
+        members: [],
+        chat: [],
+    };
+    $.ajax({
+        url: "http://localhost:3000/posts",
+        type: "POST",
+        data: data,
+        success: function(newData){
+            console.log("Group posted succesfully");
+        },
+        error: function(){
+            console.log("Error posting data");
+        }
+    });
+
+});
+
 function displayName(id, tweet, user, date, votes){
     var post = "<div class=\"post-preview\"> <h2 class=\"post-title\">"+tweet+" </h2> <p class=\"post-meta\">" +
         "Posted by <a href=\"#\">"+user+"</a> on "+date+"</p> <div class=\"btn-group btn-group-sm upDown\" " +
